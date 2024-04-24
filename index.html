@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+
+    <svg class="cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="200" height="100">
+      <path fill="#FFFF" d="M85.551,44.442c0.008-0.195,0.013-0.391,0.013-0.589c0-17.669-14.331-32-32-32c-8.075,0-15.352,3.025-20.958,7.986
+        c-0.406,0.377-0.804,0.77-1.188,1.179c-6.914,7.413-15.053,16.127-23.381,16.127c-4.081,0-7.88-2.101-10.015-5.565
+        c-0.196-0.297-0.388-0.596-0.576-0.899c-0.021-0.035-0.042-0.069-0.064-0.104c-3.013-4.986-4.726-10.855-4.726-17.062
+        c0-16.542,13.457-30,30-30c13.42,0,24.635,8.912,28.287,21.165c0.101,0.314,0.202,0.625,0.295,0.939
+        c0.01,0.032,0.022,0.064,0.032,0.097c2.666,9.039,10.847,15.518,20.604,15.518c11.088,0,20.084-8.996,20.084-20
+        c0-0.649-0.033-1.287-0.085-1.922c4.013-0.497,7.175-3.919,7.175-7.965C90.547,48.959,88.139,44.801,85.551,44.442z"/>
+      
+      <!-- Add raindrops -->
+      <g class="raindrop-container">
+        <rect class="raindrop" x="25" y="65" />
+        <rect class="raindrop" x="30" y="60" />
+        <rect class="raindrop" x="35" y="65" />
+        <rect class="raindrop" x="40" y="60" />
+        <rect class="raindrop" x="35" y="65" />
+        <rect class="raindrop" x="40" y="60" />
+
+        <!-- Add more raindrops as needed -->
+      </g>
+    </svg>
+    <div class="location">
+      <h1 class="location-timezone">Timezone</h1>
+    
+    <div class="temperature">
+      <div class="degree-section">
+        <h2 class="temperature-degree">39</h2>
+        <span>F</span>
+      </div>
+      <div class="temperature-description"> Its friggin cold</div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
